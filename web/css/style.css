@@ -8,7 +8,7 @@ body {
 	font:14px/25px Arial, Helvetica, sans-serif;
 	color:#939393;
 	min-width:1264px;
-	background:#131313
+	background:#000000;
 }
 .ic {
 	border:0;
@@ -231,7 +231,7 @@ h1 {
 }
 nav {
 	position:absolute;
-	left:132px;
+	left:15px;
 	bottom:0;
 	z-index:100;
 	background:url(../images/nav-bg.png) 0 0 repeat;
@@ -253,7 +253,7 @@ ul.menu li a {
 	padding: 17px 33px 18px 33px;
 }
 ul.menu li:hover, ul.menu li.current {
-	
+	background:#2098f5;
 }
 /*********************************content*************************************/
 #content {
@@ -284,14 +284,14 @@ ul.menu li:hover, ul.menu li.current {
 }
 .form-1 label {
 	font:14px/25px Arial, Helvetica, sans-serif;
-	color:#939393;
+	color:#345623;
 	padding-bottom:5px;
 }
 .form-1 input {
 	font-family:Arial, Helvetica, sans-serif;
 	font-size:14px;
-	color:#535353;
-	background:#131313;
+	color:#000000;
+	background:#ffffff;
 	padding:8px 10px 9px 15px;
 	outline: medium none;
 	width: 245px;
@@ -342,10 +342,10 @@ footer {
 	overflow:hidden;
 	text-align:center;
 	padding:32px 0 45px 0;
-	background:#131313;
+	background:#000000;
 }
 footer p, footer a {
-	color:#939393;
+	color:#000000;
 }
 footer a:hover {
 	text-decoration:underline;
@@ -370,7 +370,7 @@ dl dd a {
 	width:620px;
 }
 #form input {
-	background:#131313;
+	background:#DFDFDF;
 	font: 14px Arial, Helvetica, sans-serif;
 	color:#535353;
 	padding:7px 10px 10px 15px;
@@ -380,7 +380,7 @@ dl dd a {
 	float:left;
 }
 #form textarea {
-	background:#131313;
+	background:#DFDFDF;
 	font: 14px Arial, Helvetica, sans-serif;
 	color:#535353;
 	height: 246px;
@@ -412,3 +412,126 @@ dl dd a {
 	display:inline-block;
 	margin:0 20px 0 0px;
 }
+/***FIRST STYLE THE BUTTON***/
+input#gobutton{
+width:100px;
+
+cursor:pointer; /*forces the cursor to change to a hand when the button is hovered*/
+margin:15px 20px 20px;
+padding:10px 5px 29px; /*add some padding to the inside of the button*/
+background:#2098f5; /*the colour of the button*/
+border:1px solid #000000; /*required or the default border for the browser will appear*/
+/*give the button curved corners, alter the size as required*/
+-moz-border-radius: 10px;
+-webkit-border-radius: 10px;
+border-radius: 10px;
+/*give the button a drop shadow*/
+-webkit-box-shadow: 0 0 4px rgba(0,0,0, .75);
+-moz-box-shadow: 0 0 4px rgba(0,0,0, .75);
+box-shadow: 0 0 4px rgba(0,0,0, .75);
+/*style the text*/
+color:#f3f3f3;
+font-size:1.1em;
+
+}
+/***NOW STYLE THE BUTTON'S HOVER AND FOCUS STATES***/
+input#gobutton:hover, input#gobutton:focus{
+background-color :#000000; /*make the background a little darker*/
+/*reduce the drop shadow size to give a pushed button effect*/
+-webkit-box-shadow: 0 0 1px rgba(0,0,0, .75);
+-moz-box-shadow: 0 0 1px rgba(0,0,0, .75);
+box-shadow: 0 0 1px rgba(0,0,0, .75);
+}
+
+
+input#bigbutton {
+width:100px;
+background: #2098f5; /*the colour of the button*/
+padding: 10px 15px 25px; /*apply some padding inside the button*/
+border:1px solid #3e9cbf; /*required or the default border for the browser will appear*/
+cursor:pointer; /*forces the cursor to change to a hand when the button is hovered*/
+/*style the text*/
+font-size:1em;
+font-family:Oswald, sans-serif; /*Oswald is available from http://www.google.com/webfonts/specimen/Oswald*/
+letter-spacing:.1em;
+text-shadow: 0 -1px 0px rgba(0, 0, 0, 0.3); /*give the text a shadow - doesn't appear in Opera 12.02 or earlier*/
+color: #ffffff;
+/*use box-shadow to give the button some depth - see cssdemos.tupence.co.uk/box-shadow.htm#demo7 for more info on this technique*/
+//-webkit-box-shadow: inset 0px 1px 0px #3e9cbf, 0px 5px 0px 0px #205c73, 0px 10px 5px #999;
+//-moz-box-shadow: inset 0px 1px 0px #3e9cbf, 0px 5px 0px 0px #205c73, 0px 10px 5px #999;
+//box-shadow: inset 0px 1px 0px #3e9cbf, 0px 5px 0px 0px #205c73, 0px 10px 5px #999;
+/*give the corners a small curve*/
+-moz-border-radius: 10px;
+-webkit-border-radius: 10px;
+border-radius: 10px;
+}
+/***SET THE BUTTON'S HOVER AND FOCUS STATES***/
+input#bigbutton:hover, input#bigbutton:focus {
+color:#dfe7ea;
+/*reduce the size of the shadow to give a pushed effect*/
+//-webkit-box-shadow: inset 0px 1px 0px #3e9cbf, 0px 2px 0px 0px #205c73, 0px 2px 5px #999;
+-moz-box-shadow: inset 0px 1px 0px #3e9cbf, 0px 2px 0px 0px #205c73, 0px 2px 5px #999;
+//box-shadow: inset 0px 1px 0px #3e9cbf, 0px 2px 0px 0px #205c73, 0px 2px 5px #999;
+}
+
+
+
+.modalDialog {
+	position: fixed;
+	font-family: Arial, Helvetica, sans-serif;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 99999;
+	opacity:0;
+	-webkit-transition: opacity 400ms ease-in;
+        -moz-transition: opacity 400ms ease-in;
+        transition: opacity 400ms ease-in;
+	pointer-events: none;
+}
+
+
+
+
+.modalDialog:target {
+	opacity:1;
+	pointer-events: auto;
+}
+
+.modalDialog > div {
+	width: 400px;
+	position: relative;
+	margin: 10% auto;
+	padding: 5px 20px 13px 20px;
+	border-radius: 10px;
+	background: #fff;
+	background: -moz-linear-gradient(#fff, #999);
+	background: -webkit-linear-gradient(#fff, #999);
+	background: -o-linear-gradient(#fff, #999);
+}
+
+
+
+
+.close {
+	background: #606061;
+	color: #FFFFFF;
+	line-height: 25px;
+	position: absolute;
+	right: -12px;
+	text-align: center;
+	top: -10px;
+	width: 24px;
+	text-decoration: none;
+	font-weight: bold;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	-moz-box-shadow: 1px 1px 3px #000;
+	-webkit-box-shadow: 1px 1px 3px #000;
+	box-shadow: 1px 1px 3px #000;
+}
+
+.close:hover { background: #00d9ff; }

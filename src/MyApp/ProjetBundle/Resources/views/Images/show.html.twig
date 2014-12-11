@@ -1,0 +1,37 @@
+{% extends "MyAppProjetBundle::layout.html.twig" %}
+
+
+{% block content %}
+    <h1>Images</h1>
+
+    <table class="record_properties">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ entity.id }}</td>
+            </tr>
+            <tr>
+                <th>Images</th>
+                <td>{{ entity.images }}</td>
+            </tr>
+            <tr>
+                <th>Idoffre</th>
+                <td>{{ entity.idOffre }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+        <ul class="record_actions">
+    <li>
+        <a href="{{ path('images') }}">
+            Back to the list
+        </a>
+    </li>
+    <li>
+        <a href="{{ path('images_edit', { 'id': entity.id }) }}">
+            Edit
+        </a>
+    </li>
+    <li>{{ form(delete_form) }}</li>
+</ul>
+{% endblock %}

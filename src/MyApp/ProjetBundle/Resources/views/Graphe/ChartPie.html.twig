@@ -1,0 +1,16 @@
+{% extends "MyAppProjetBundle::layout.html.twig" %}
+
+{% block content %}
+    <script src="{{asset('js/highcharts.js')}}"></script>
+
+    <script src="{{asset('js/exporting.js')}}"></script>
+    
+
+    <script type="text/javascript">
+
+        {{ chart(chart) }}
+
+    </script>
+
+    <div id="piechart" style="min-width: 400px; height: 400px; margin: 0 auto"></div>
+{% endblock %}

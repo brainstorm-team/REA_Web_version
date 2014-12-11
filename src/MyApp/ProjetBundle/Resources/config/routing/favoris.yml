@@ -1,0 +1,30 @@
+favoris:
+    path:     /
+    defaults: { _controller: "MyAppProjetBundle:Favoris:index" }
+
+favoris_show:
+    path:     /{id}/show
+    defaults: { _controller: "MyAppProjetBundle:Favoris:show" }
+
+favoris_new:
+    path:     /new
+    defaults: { _controller: "MyAppProjetBundle:Favoris:new" }
+
+favoris_create:
+    path:     /create
+    defaults: { _controller: "MyAppProjetBundle:Favoris:create" }
+    requirements: { _method: post }
+
+favoris_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "MyAppProjetBundle:Favoris:edit" }
+
+favoris_update:
+    path:     /{id}/update
+    defaults: { _controller: "MyAppProjetBundle:Favoris:update" }
+    requirements: { _method: post|put }
+
+favoris_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "MyAppProjetBundle:Favoris:delete" }
+    requirements: { _method: post|delete }

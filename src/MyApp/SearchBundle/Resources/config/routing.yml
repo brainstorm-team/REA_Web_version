@@ -1,0 +1,7 @@
+my_app_search_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: MyAppSearchBundle:Default:index }
+
+search:
+    path:     /search/offre
+    defaults: { _controller: MyAppSearchBundle:Offre:search }

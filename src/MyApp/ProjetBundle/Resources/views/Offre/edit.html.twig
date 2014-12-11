@@ -1,0 +1,20 @@
+{% extends "MyAppProjetBundle::layout.html.twig" %}
+
+{% block Container %}
+    <h1>Offre edit</h1>
+    
+
+    {{ form(edit_form) }}
+
+        <ul class="record_actions">
+    <li>
+        <a href="{{ path('offre') }}">
+            <img src="{{ asset('Uploads/Offre/'~entity.path)}} " alt="" />
+            Back to the list
+        </a>
+    </li>
+    
+    <li>{{ form(delete_form) }}</li>
+</ul>
+    
+{% endblock %}

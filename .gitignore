@@ -1,4 +1,5 @@
 /vendor/
-/app/logs/
+/app/logs/*
+/app/cache/*
 /web/bundles/
 /app/config/parameters.yml

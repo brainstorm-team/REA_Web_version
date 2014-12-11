@@ -1,0 +1,30 @@
+images:
+    path:     /
+    defaults: { _controller: "MyAppProjetBundle:Images:index" }
+
+images_show:
+    path:     /{id}/show
+    defaults: { _controller: "MyAppProjetBundle:Images:show" }
+
+images_new:
+    path:     /new
+    defaults: { _controller: "MyAppProjetBundle:Images:new" }
+
+images_create:
+    path:     /create
+    defaults: { _controller: "MyAppProjetBundle:Images:create" }
+    requirements: { _method: post }
+
+images_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "MyAppProjetBundle:Images:edit" }
+
+images_update:
+    path:     /{id}/update
+    defaults: { _controller: "MyAppProjetBundle:Images:update" }
+    requirements: { _method: post|put }
+
+images_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "MyAppProjetBundle:Images:delete" }
+    requirements: { _method: post|delete }

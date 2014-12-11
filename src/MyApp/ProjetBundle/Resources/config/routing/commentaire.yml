@@ -1,0 +1,30 @@
+commentaire:
+    path:     /
+    defaults: { _controller: "MyAppProjetBundle:Commentaire:index" }
+
+commentaire_show:
+    path:     /{id}/show
+    defaults: { _controller: "MyAppProjetBundle:Commentaire:show" }
+
+commentaire_new:
+    path:     /new
+    defaults: { _controller: "MyAppProjetBundle:Commentaire:new" }
+
+commentaire_create:
+    path:     /create
+    defaults: { _controller: "MyAppProjetBundle:Commentaire:create" }
+    requirements: { _method: post }
+
+commentaire_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "MyAppProjetBundle:Commentaire:edit" }
+
+commentaire_update:
+    path:     /{id}/update
+    defaults: { _controller: "MyAppProjetBundle:Commentaire:update" }
+    requirements: { _method: post|put }
+
+commentaire_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "MyAppProjetBundle:Commentaire:delete" }
+    requirements: { _method: post|delete }

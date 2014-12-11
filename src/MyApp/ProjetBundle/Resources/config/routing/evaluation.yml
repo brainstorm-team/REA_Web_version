@@ -1,0 +1,30 @@
+evaluation:
+    path:     /
+    defaults: { _controller: "MyAppProjetBundle:Evaluation:index" }
+
+evaluation_show:
+    path:     /{id}/show
+    defaults: { _controller: "MyAppProjetBundle:Evaluation:show" }
+
+evaluation_new:
+    path:     /new
+    defaults: { _controller: "MyAppProjetBundle:Evaluation:new" }
+
+evaluation_create:
+    path:     /create
+    defaults: { _controller: "MyAppProjetBundle:Evaluation:create" }
+    requirements: { _method: post }
+
+evaluation_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "MyAppProjetBundle:Evaluation:edit" }
+
+evaluation_update:
+    path:     /{id}/update
+    defaults: { _controller: "MyAppProjetBundle:Evaluation:update" }
+    requirements: { _method: post|put }
+
+evaluation_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "MyAppProjetBundle:Evaluation:delete" }
+    requirements: { _method: post|delete }

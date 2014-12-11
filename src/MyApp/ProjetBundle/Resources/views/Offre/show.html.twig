@@ -1,0 +1,71 @@
+{% extends "MyAppProjetBundle::layout.html.twig" %}
+
+
+{% block Container %}
+    
+    <form>
+    <table class="record_properties">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ entity.id }}</td>
+            </tr>
+            <tr>
+                <th>Titre</th>
+                <td>{{ entity.titre }}</td>
+            </tr>
+            <tr>
+                <th>Type</th>
+                <td>{{ entity.type }}</td>
+            </tr>
+            <tr>
+                <th>Categorie</th>
+                <td>{{ entity.categorie }}</td>
+            </tr>
+            <tr>
+                <th>Ville</th>
+                <td>{{ entity.ville }}</td>
+            </tr>
+            <tr>
+                <th>Prix</th>
+                <td>{{ entity.prix }}</td>
+            </tr>
+            <tr>
+                <th>Surface</th>
+                <td>{{ entity.surface }}</td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>{{ entity.description }}</td>
+            </tr>
+            <tr>
+                <th>Validation</th>
+                <td>{{ entity.validation }}</td>
+            </tr>
+            <tr>
+                <th>Dateinsertion</th>
+                <td>{{ entity.dateInsertion|date('Y-m-d H:i:s') }}</td>
+            </tr>
+            
+            
+        </tbody>
+    </table>
+            
+
+        <ul class="record_actions">
+    <li>
+        <a href="{{ path('offre') }}">
+             <img src="{{asset('Uploads/Offre/'~entity.path)}} " alt="" />
+           
+            Back to the list
+        </a>
+    </li>
+    <li>
+        <a href="{{ path('offre_edit', { 'id': entity.id }) }}">
+            Edit
+        </a>
+    </li>
+    <li>{{ form(delete_form) }}</li>
+</ul>
+    </form>
+{% endblock %}

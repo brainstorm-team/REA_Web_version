@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <link rel="stylesheet" type="text/css" href="{{asset('css/imageScroller.css')}}"/>
+    
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    
+<title>RealEstate | Buying</title>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" media="screen" href="{{asset('css/reset.css')}}"/>
+<link rel="stylesheet" type="text/css" media="screen" href="{{asset('css/style.css')}}"/>
+<link rel="stylesheet" type="text/css" media="screen" href="{{asset('css/grid_12.css')}}"/>
+<link rel="stylesheet" type="text/css" media="screen" href="{{asset('css/slider-2.css')}}"/>
+<link rel="stylesheet" type="text/css" media="screen" href="{{asset('css/jqtransform.css')}}"/>
+
+
+<script src="{{asset('js/jquery-1.7.min.js')}}"></script>
+<script src="{{asset('js/jquery.easing.1.3.js')}}"> </<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>RealEstate | Buying</title>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" media="screen" href="{{asset('css/reset.css')}}">
+<link rel="stylesheet" type="text/css" media="screen" href="{{asset('css/style.css')}}">
+<link rel="stylesheet" type="text/css" media="screen" href="{{asset('css/grid_12.css')}}">
+<link rel="stylesheet" type="text/css" media="screen" href="{{asset('css/slider-2.css')}}">
+<link rel="stylesheet" type="text/css" media="screen" href="{{asset('css/jqtransform.css')}}">
+<script src="{{asset('js/jquery-1.7.min.js')}}"></script>
+<script src="{{asset('js/jquery.ea3.js')}}"></script>
+<script src="{{asset('js/cufon-yui.js')}}"></script>
+<script src="{{asset('js/vegur_400.font.js')}}"></script>
+<script src="{{asset('js/Vegur_bold_700.font.js')}}"></script>
+<script src="{{asset('js/cufon-replace.js')}}"></script>
+<script src="{{asset('js/tms-0.4.x.js')}}"></script>
+<script src="{{asset('js/jquery.jqtransform.js')}}"></script>
+<script src="{{asset('js/FF-cash.js')}}"></script>
+<script src="{{asset('js/script.js')}}"></script>
+
+<script src="{{ asset('bundles/avawesomealertify/js/confirm.js') }}"></script>
+<!--[if lt IE 9]>
+<script src="{{asset('js/html5.js')}}"></script>
+<link rel="stylesheet" type="text/css" media="screen" href="{{asset('css/ie.css')}}">
+<![endif]-->
+   
+</head>
+<body>
+     
+  <div id="outerContainer">
+			<div id="imageScroller">
+				<div id="viewer" class="js-disabled">
+					<a class="wrapper" href="{{asset('http://www.traveltodo.com/')}}" target="_blank" title="travelTodo"><img class="logo" id="traveltodo" src="{{asset('logos/traveltodo.jpg')}}" alt="TraveltoDdo"></a>
+                                    <a class="wrapper" href="{{asset('http://www.sixt.fr/location-voiture/tunisie')}}" target="_blank" title="sixt"><img class="logo" id="sixt" src="{{asset('logos/sixt.jpg')}}" alt="Sixt"></a>
+                                    <a class="wrapper" href="{{asset('http://electronabli.tn/')}}" target="_blank" title="electronabli"><img class="logo" id="electronabli" src="{{asset('logos/electronabli.jpg')}}" alt="Electronabli"></a>
+                                    <a class="wrapper" href="{{asset('http://www.orange.tn/')}}" target="_blank" title="orange"><img class="logo" id="orange" src="{{asset('logos/orange.jpg')}}" alt="Orange"></a>
+                                    <a class="wrapper" href="{{asset('http://www.carrefourtunisie.com/')}}" target="_blank" title="carrefour"><img class="logo" id="carrefour" src="{{asset('logos/carrefour.jpg')}}" alt="carrefour"></a>
+                                    <a class="wrapper" href="{{asset('http://www.biat.com.tn/biat/mieux_connaitre.jsp')}}" target="_blank" title="attijari"><img class="logo" id="attijari" src="{{asset('logos/attijari.jpg')}}" alt="attijari"></a>
+                                    <a class="wrapper" href="{{asset('http://www.attijaribank.com.tn/')}}" target="_blank" title="tunisair"><img class="logo" id="tunisair" src="{{asset('logos/tunisair.jpg')}}" alt="tunisair"></a>
+				</div>
+			</div>
+		</div>
+		
+    
+    
+<div class="main">
+  <!--==============================header=================================-->
+  <header>
+          {%block header %}
+
+      
+          
+    <div>
+
+      <h1><a href="index.html"><img src="{{asset('images/logo.jpg')}}" alt=""></a></h1>
+      <div class="social-icons">    
+          
+
+    <span>Follow Us:</span> <a href="https://plus.google.com/share?url=http://esprit.ens.tn" target="_blank" title="Share on Google Plus"  class="icon-3"></a> <a href="http://www.facebook.com/sharer.php?u=http://esprit.ens.tn" target="_blank" class="icon-2"></a> <a href="http://twitter.com/share?url=http://esprit.ens.tn" target="_blank" class="icon-1"></a>                
+
+    
+
+          </div>
+      <div id="slide">
+        <div class="slider">
+          <ul class="items">
+            <li><img src="{{asset('images/slider-1-small.jpg')}}" alt=""></li>
+            <li><img src="{{asset('images/slider-2-small.jpg')}}" alt=""></li>
+            <li><img src="{{asset('images/slider-3-small.jpg')}}" alt=""></li>
+          </ul>
+        </div>
+        <a href="#" class="prev"></a><a href="#" class="next"></a> </div>
+      <nav>
+          
+          {%block nav %}
+
+        <ul class="menu">
+          <li><a href="{{path('my_app_projet_affichage')}}">Accueil</a></li>
+          <li class="current"><a href="">Espace Client</a></li>
+          <li><a href="{{path('Contact')}}">Offre</a></li>
+          <li><a href="{{path('Contact')}}">Renting</a></li>
+          <li><a href="{{path('Contact')}}">Recrutement</a></li>
+          <li><a href="{{path('Contact')}}">Contacts</a></li>
+        </ul>
+            
+           {%endblock %}
+
+      </nav>
+    </div>
+           {%endblock %}
+     
+
+  </header>
+  <!--==============================content================================-->
+  
+  <section id="content">
+    <div class="container_12">
+      {%block Container %}
+          
+      
+      {%endblock %}
+      <form action="{{path('search')}}" method="POST">
+          Titre : <input name="titre" id="titre" value=""/><br>
+          Type  : <input name="type" id="titre" value=""/><br><br>
+          <input type="submit" value="Recherche"/>
+      </form>
+        </div>
+      </div>
+      <div class="clear"></div>
+      
+    </div>
+  </section>
+</div>
+        <!--==============================footer=================================-->
+        <footer>
+            
+            <div id="outerContainer">
+                            <div id="imageScroller">
+                                <div id="viewer" class="js-disabled">
+                                    <a class="wrapper" href="{{asset('http://www.traveltodo.com/')}}" target="_blank" title="travelTodo"><img class="logo" id="traveltodo" src="{{asset('logos/traveltodo.jpg')}}" alt="TraveltoDdo"></a>
+                                    <a class="wrapper" href="{{asset('http://www.sixt.fr/location-voiture/tunisie')}}" target="_blank" title="sixt"><img class="logo" id="sixt" src="{{asset('logos/sixt.jpg')}}" alt="Sixt"></a>
+                                    <a class="wrapper" href="{{asset('http://electronabli.tn/')}}" target="_blank" title="electronabli"><img class="logo" id="electronabli" src="{{asset('logos/electronabli.jpg')}}" alt="Electronabli"></a>
+                                    <a class="wrapper" href="{{asset('http://www.orange.tn/')}}" target="_blank" title="orange"><img class="logo" id="orange" src="{{asset('logos/orange.jpg')}}" alt="Orange"></a>
+                                    <a class="wrapper" href="{{asset('http://www.carrefourtunisie.com/')}}" target="_blank" title="carrefour"><img class="logo" id="carrefour" src="{{asset('logos/carrefour.jpg')}}" alt="carrefour"></a>
+                                    <a class="wrapper" href="{{asset('http://www.biat.com.tn/biat/mieux_connaitre.jsp')}}" target="_blank" title="attijari"><img class="logo" id="attijari" src="{{asset('logos/attijari.jpg')}}" alt="attijari"></a>
+                                    <a class="wrapper" href="{{asset('http://www.attijaribank.com.tn/')}}" target="_blank" title="tunisair"><img class="logo" id="tunisair" src="{{asset('logos/tunisair.jpg')}}" alt="tunisair"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <script type="text/javascript">
+                            $(function() {
+
+                                //remove js-disabled class
+                                $("#viewer").removeClass("js-disabled");
+
+                                //create new container for images
+                                $("<div>").attr("id", "container").css({position: "absolute"}).width($(".wrapper").length * 170).height(170).appendTo("div#viewer");
+
+                                //add images to container
+                                $(".wrapper").each(function() {
+                                    $(this).appendTo("div#container");
+                                });
+
+                                //work out duration of anim based on number of images (1 second for each image)
+                                var duration = $(".wrapper").length * 1000;
+
+                                //store speed for later (distance / time)
+                                var speed = (parseInt($("div#container").width()) + parseInt($("div#viewer").width())) / duration;
+
+                                //set direction
+                                var direction = "rtl";
+
+                                //set initial position and class based on direction
+                                (direction == "rtl") ? $("div#container").css("left", $("div#viewer").width()).addClass("rtl") : $("div#container").css("left", 0 - $("div#container").width()).addClass("ltr");
+
+                                //animator function
+                                var animator = function(el, time, dir) {
+
+                                    //which direction to scroll
+                                    if (dir == "rtl") {
+
+                                        //add direction class
+                                        el.removeClass("ltr").addClass("rtl");
+
+                                        //animate the el
+                                        el.animate({left: "-" + el.width() + "px"}, time, "linear", function() {
+
+                                            //reset container position
+                                            $(this).css({left: $("div#imageScroller").width(), right: ""});
+
+                                            //restart animation
+                                            animator($(this), duration, "rtl");
+
+                                            //hide controls if visible
+                                            ($("div#controls").length > 0) ? $("div#controls").slideUp("slow").remove() : null;
+
+                                        });
+                                    } else {
+
+                                        //add direction class
+                                        el.removeClass("rtl").addClass("ltr");
+
+                                        //animate the el
+                                        el.animate({left: $("div#viewer").width() + "px"}, time, "linear", function() {
+
+                                            //reset container position
+                                            $(this).css({left: 0 - $("div#container").width()});
+
+                                            //restart animation
+                                            animator($(this), duration, "ltr");
+
+                                            //hide controls if visible
+                                            ($("div#controls").length > 0) ? $("div#controls").slideUp("slow").remove() : null;
+                                        });
+                                    }
+                                }
+
+                                //start anim
+                                animator($("div#container"), duration, direction);
+
+                                //pause on mouseover
+                                $("a.wrapper").live("mouseover", function() {
+
+                                    //stop anim
+                                    $("div#container").stop(true);
+
+                                    //show controls
+                                    ($("div#controls").length == 0) ? $("<div>").attr("id", "controls").appendTo("div#outerContainer").css({opacity: 0.7}).slideDown("slow") : null;
+                                    ($("a#rtl").length == 0) ? $("<a>").attr({id: "rtl", href: "#", title: "rtl"}).appendTo("#controls") : null;
+                                    ($("a#ltr").length == 0) ? $("<a>").attr({id: "ltr", href: "#", title: "ltr"}).appendTo("#controls") : null;
+
+                                    //variable to hold trigger element
+                                    var title = $(this).attr("title");
+
+                                    //add p if doesn't exist, update it if it does
+                                    ($("p#title").length == 0) ? $("<p>").attr("id", "title").text(title).appendTo("div#controls") : $("p#title").text(title);
+                                });
+
+                                //restart on mouseout
+                                $("a.wrapper").live("mouseout", function(e) {
+
+                                    //hide controls if not hovering on them
+                                    (e.relatedTarget == null) ? null : (e.relatedTarget.id != "controls") ? $("div#controls").slideUp("slow").remove() : null;
+
+                                    //work out total travel distance
+                                    var totalDistance = parseInt($("div#container").width()) + parseInt($("div#viewer").width());
+
+                                    //work out distance left to travel
+                                    var distanceLeft = ($("div#container").hasClass("ltr")) ? totalDistance - (parseInt($("div#container").css("left")) + parseInt($("div#container").width())) : totalDistance - (parseInt($("div#viewer").width()) - (parseInt($("div#container").css("left"))));
+
+                                    //new duration is distance left / speed)
+                                    var newDuration = distanceLeft / speed;
+
+                                    //restart anim
+                                    animator($("div#container"), newDuration, $("div#container").attr("class"));
+
+                                });
+
+                                //handler for ltr button
+                                $("#ltr").live("click", function() {
+
+                                    //stop anim
+                                    $("div#container").stop(true);
+
+                                    //swap class names
+                                    $("div#container").removeClass("rtl").addClass("ltr");
+
+                                    //work out total travel distance
+                                    var totalDistance = parseInt($("div#container").width()) + parseInt($("div#viewer").width());
+
+                                    //work out remaining distance
+                                    var distanceLeft = totalDistance - (parseInt($("div#container").css("left")) + parseInt($("div#container").width()));
+
+                                    //new duration is distance left / speed)
+                                    var newDuration = distanceLeft / speed;
+
+                                    //restart anim
+                                    animator($("div#container"), newDuration, "ltr");
+                                });
+
+                                //handler for rtl button
+                                $("#rtl").live("click", function() {
+
+                                    //stop anim
+                                    $("div#container").stop(true);
+
+                                    //swap class names
+                                    $("div#container").removeClass("ltr").addClass("rtl");
+
+                                    //work out total travel distance
+                                    var totalDistance = parseInt($("div#container").width()) + parseInt($("div#viewer").width());
+
+                                    //work out remaining distance
+                                    var distanceLeft = totalDistance - (parseInt($("div#viewer").width()) - (parseInt($("div#container").css("left"))));
+
+                                    //new duration is distance left / speed)
+                                    var newDuration = distanceLeft / speed;
+
+                                    //restart anim
+                                    animator($("div#container"), newDuration, "rtl");
+                                });
+                            });
+                        </script>
+            <p>© 2012 Real Estate</p>
+            <p>Website Template by <a target="_blank" href="http://www.templatemonster.com/">TemplateMonster.com</a></p>
+        </footer>
+        <script>Cufon.now();</script>
+    </body>
+</html>
+

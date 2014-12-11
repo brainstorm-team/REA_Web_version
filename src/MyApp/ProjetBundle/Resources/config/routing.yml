@@ -1,3 +1,54 @@
+Contact:
+    path:     /contact
+    defaults: { _controller: MyAppProjetBundle:Projet:Contact }
+
 my_app_projet_homepage:
     path:     /hello/{name}
     defaults: { _controller: MyAppProjetBundle:Default:index }
+
+my_app_projet_evaluation:
+    resource: "@MyAppProjetBundle/Resources/config/routing/evaluation.yml"
+    prefix:   /evaluation
+
+my_app_projet_user:
+    resource: "@MyAppProjetBundle/Resources/config/routing/user.yml"
+    prefix:   /user
+
+my_app_projet_images:
+    resource: "@MyAppProjetBundle/Resources/config/routing/images.yml"
+    prefix:   /images
+
+my_app_projet_favoris:
+    resource: "@MyAppProjetBundle/Resources/config/routing/favoris.yml"
+    prefix:   /favoris
+
+my_app_projet_commentaire:
+    resource: "@MyAppProjetBundle/Resources/config/routing/commentaire.yml"
+    prefix:   /commentaire
+
+my_app_projet_message:
+    resource: "@MyAppProjetBundle/Resources/config/routing/message.yml"
+    prefix:   /message
+
+my_app_projet_offre:
+    resource: "@MyAppProjetBundle/Resources/config/routing/offre.yml"
+    prefix:   /offre
+    
+my_app_projet_affichage:
+    path:     /affichage
+    defaults: { _controller: MyAppProjetBundle:Accueil:index }
+    
+my_app_projet_graphe_chart_line:
+    path:     /chartLine
+    defaults: { _controller: MyAppProjetBundle:Graphe:chartLine }   
+    
+my_app_projet_graphe_histogramme:
+    path:     /histo
+    defaults: { _controller: MyAppProjetBundle:Graphe:chartHistogramme }   
+
+my_app_projet_graphe_chart_pie:
+    path:     /chartPie
+    defaults: { _controller: MyAppProjetBundle:Graphe:chartPie }       
+    
+    
+    

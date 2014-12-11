@@ -1,0 +1,4 @@
+services:
+#    my_app_search.example:
+#        class: MyApp\SearchBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]
