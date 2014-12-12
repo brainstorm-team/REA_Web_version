@@ -1,9 +1,19 @@
 {% extends "::base.html.twig" %}
 
-{% block title %}MyAppSearchBundle:Offre:search{% endblock %}
-
 {% block body %}
-<h1>Welcome to the Offre:search page</h1>
+<table class="tftable">
+    <tr>
+        <td>ID</td>
+        <td>Titre</td>
+        <td>Type</td>
+        <td>Categorie</td>
+        <td>Ville</td>
+        <td>Prix</td>
+        <td>Surface</td>
+        <td>Description</td>
+        <td>Validation</td>
+        <td>Date d'insertion</td>
+    </tr>
 {% for entity in offres %}
             <tr>
                 <td><a href="{{ path('offre_show', { 'id': entity.id }) }}">{{ entity.id }}</a></td>
@@ -16,8 +26,8 @@
                 <td>{{ entity.description }}</td>
                 <td>{{ entity.validation }}</td>
                 <td>{% if entity.dateInsertion %}{{entity.dateInsertion |date('Y-m-d H:i:s') }}{% endif %}</td>
-                
-             
+ 
             </tr>
         {% endfor %}
+</table>        
 {% endblock %}
